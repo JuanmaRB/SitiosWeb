@@ -1,0 +1,138 @@
+a{
+  text-decoration: none; 
+  color:black;
+  } 
+a:hover {
+  text-decoration: underline;
+ } 
+ul{
+    list-style:none;
+}
+p{ color:#000000;
+}
+
+body{
+background-color:#CCCCCC;
+	background-repeat: no-repeat;
+	/*background-position: center center;*/
+	
+}
+
+#menu{
+  position:absolute;
+  color: #EDF9FA;
+  top: 128px;
+  left:40px;
+  background-color: #FFFFFF;
+  height: 650px;
+  width: 150;
+}
+
+#header{
+position:absolute;
+	margin-left:30px;
+    position: absolute;
+  	   
+}
+#body{
+   position:absolute;
+   background-color: #FFFFFF;   
+   left:153px;
+   top:0px;
+   width: 1049px;
+   height:650px;
+   /*overflow: auto;*/
+}
+#foot{
+   margin-left:2%;
+   position: absolute;
+   left: 197px;
+   top:	550px;
+   background-color:#E5E5E5;
+   width: 969px;
+   height:110px;
+}
+
+
+.tituloNoticia{
+		background-color: #4D4D4D;
+		color: #E5E5E5;
+		font-size: 40px;
+		text-align: center;
+	}
+.contenidoNoticia{
+		font-size: 18px;
+}
+
+.footNoticia{
+	background-color: #160F0F;
+	color: #FFFFFF;
+	text-align: right;
+	}
+	
+.listComentario{
+	background-color: #D0500F;
+}
+
+#body table{
+	text-align:center;
+	color: #666666;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+#buscador{
+background-color:#CCCCCC;
+		position: absolute;
+		margin-left: 200px;
+		margin-top: 70px;
+		float: center;
+		font-size: 18px;
+}
+#tabla3{
+position: absolute;
+height:498px;
+width:783px;
+margin-top:297px;
+margin-left:91px;
+}
+.inputB{
+		background-color: #FF6600;
+		color: #FFFFFF;
+		font-size: 18px;
+	}
+	
+	#coincide{
+		background-color: #FFE800; 
+	font-size: 32;
+	}
+	
+	#footer {
+	position:absolute;
+	left:750px;
+	top:555px;
+	width:319px;
+	height:113px;
+	z-index:1;
+}
+.foottexto1 {font-size: 11px}
+.foottexto2 {font-size: 11px}
+#ul{
+list-style:none;
+display: inline-block;
+text-decoration:none;
+color:fff;
+font-size:24px;
+background-color:#66FF00;
+}
+
+#link{
+color: #000099;
+}
+
+#body #textoHelp{
+	display: block;
+	margin-left: 110px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#003366
+}

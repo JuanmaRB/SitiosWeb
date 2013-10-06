@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta content=' ; url=index.html' />
+
+<style>
+		body{
+			background: #eee;
+			font: small-caption;
+			font-size: 11px;
+			margin: auto;
+		}
+		a {
+			background: -webkit-linear-gradient(#fff , #ddd);
+			border: 1px solid #bbb;
+			color: #111;
+			font-size: 13px;
+			float: left;
+			height: 20px;
+			text-align: center;
+			padding: 5px;
+			font-weight: bold;
+			text-shadow : 1px -1px 0px white;
+			text-decoration: none;
+			width: 100px;
+
+		}
+		section{
+			background: -webkit-linear-gradient(#f7f9ed , #fff);
+			border: 1px solid #bbb;
+			border-radius: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 50px;
+			height: 330px;
+			padding: 10px;
+			width: 370px;
+
+		}
+		section label{
+			float: left;
+			height: 30px;
+			width: 120px;
+			text-align: right;
+
+		}
+		section input , select{
+			/*border: #c0dede 1px 1px solid;*/
+			height: 30px;
+			margin: 0px 0px 0px 10px;	
+			outline: none;
+
+		}
+		select input:focus{
+			box-shadow: 0px 0px 5px #c0dede;
+
+		}
+		section .error{
+			background: #dd0000;
+			color: white;
+			display: none;
+			float: left;
+			font-weight: bold;
+			height: 30px;
+			text-align: center;
+			padding: 5px;
+			width: 100px;
+		}
+
+</style>
+<script src='js/jquery.js'></script>
+<script>
+
+	$( document ). ready( function(){
+
+		$('#btnEnviar').click(function(){
+
+			//event.preventDefault();
+
+			var apellido = $( '.txtapellido' ).val(),
+			nombre = $( '.txtnombre' ).val(),
+			dni = $( '.txtdni' ).val(),
+			//chaco = $( '.txtchaco' ).val(),
+			midni = $( '.txtdni' ).val();
+
+				if (apellido && nombre && dni)
+				 {
+				 	
+
+					$( 'body' ).ajaxStart( function() {
+
+						$( '#contenedor').html( '<img src="img/loading.gif" />');
+
+					});
+
+					$.post( 'php/recibir_corrientes.php' ,{
+
+						apellido : apellido,
+						nombre : nombre,
+						dni : dni
+						
+						
+					} , function( exito ){
+
+						$( '#contenedor' ).removeClass('error').html( exito ).fadeIn();
+						//alert(midni);
+						$( '#verPDF').click(function(){
+							window.open( 'php/verDatos_corrientes.php?eldni='+midni+'', 'MIPDF' , 'width=600 , height=500' );
+							$( this ).fadeOut( 1000 );
+							return false;
+
+						});
+
+					});
+					$( '.txtapellido' ).val( '' );
+					$( '.txtnombre' ).val( '' );
+					$( '.txtdni' ).val( '' );
+					//$( '.txtchaco' ).val( '' );										
+					
+				}else{
+
+					$( '#contenedor' ).fadeIn( 500 ).addClass( 'error' ).html( 'Llenar todos los campos' ).fadeOut( 1000 );
+				}
+			
+		});
+});
+
+</script>
+<title>formulario inscripción</title>
+</head>
+
+
+<body>
+
+<section>
+
+<label> Apellido</label>
+<input type='text' class='txtapellido' placeholder='Ingrese Apellido...' />
+<br><br>
+
+<label> Nombre</label>
+<input type='text' class='txtnombre' placeholder='Ingrese Nombre...' />
+<br><br>
+
+<label> DNI</label>
+
+<input type='text' class='txtdni' maxlength="8" placeholder='07989234...' />
+<br><br>
+
+
+<a href="#" id='btnEnviar'>Registrarse</a>
+<div id='contenedor'></div>
+
+<br><br>
+
+
+
+
+
+
+
+
+
+</section>
+
+</body>
+
+</html>

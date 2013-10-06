@@ -1,0 +1,620 @@
+/*
+CSS Credit: http://www.templatemo.com/
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: black;
+}
+
+a:link, a:visited { color: #750a20; text-decoration: none;} 
+a:active, a:hover { color: #FF0000;}
+
+p {
+	margin: 0 0 5px 0;
+	padding: 0px;
+}
+
+h1 {
+	margin: 0 0 5px 0;
+	padding: 10px 0 10px 0;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 28px;
+	color: #750a20;
+}
+
+h2 {
+	margin: 0 0 10px 0;
+	padding: 2px 0;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333333;
+}
+
+h3 {
+	margin: 0 0 5px 0;
+	padding: 2px 0;
+	font-size: 12px;
+	font-weight: bold;
+	color: #750a20;
+}
+
+h4 {
+	margin: 0 0 5px 0;
+	padding: 2px 0;
+	font-size: 16px;
+	font-weight: bold;
+	color: #750a20;
+}
+
+.updatedtime {
+	font-size: 10px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.view_all a{
+	clear: both;
+	display: block;
+	width: 100%;
+	padding: 5px 0 1px 0;
+	margin-bottom: 5px; 
+	font-weight: bold;
+	text-decoration: none;
+	border-top: 1px dotted #CCC;
+}
+
+#templatemo_container {
+	margin: auto;
+	width: 1000px;
+}
+
+#templatemo_top_panel {
+	float: left;
+	width: 1000px;
+	height: 0px;
+	margin: 0px;
+	color: #FFF;
+	background: #003 url(images/templatemo_top_panel_background.jpg) no-repeat;
+}
+
+#templatemo_sitetitle {
+	float: left;
+	width: 300px;
+	margin: 35px 0 0 10px;
+	padding: 5px 0 3px 0;
+	font-size: 25px;
+	font-weight: bold;
+	color: #FFF;
+}
+
+#templatemo_searchbox {
+	float: left;
+	width: 320px;
+	margin: 40px 0 0 15px;
+}
+
+#templatemo_searchbox form {
+	margin: 0px;
+	padding: 0px;
+}
+
+#searchfield{
+	background:#FFFFFF;
+	border: none;
+	color: #000;
+	font-size: 13px;
+	font-variant: normal;
+	height: 16px;
+	line-height: normal;
+	padding: 4px;
+	width: 200px;
+}
+
+
+#searchbutton{
+	background: url(images/templatemo_search_button.gif); 
+	border: none;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	height: 24px;
+	margin: 0 0 0 7px;
+	padding: 0 6px;
+	text-align: center;
+	vertical-align: bottom;
+	white-space: pre;
+	width: 66px;
+}
+
+#templatemo_currentdate {
+float: right;
+width: 278px;
+margin: 42px 12px 0 0;
+text-align: right;
+font-weight: bold;
+color: #000000;
+}
+
+/*------------- Menu ------------------*/
+#templatemo_menu {
+	float: left;
+	width: 1000px;
+	height: 40px;
+	margin-left: 178px;
+	/*background-color: #EDFAF0;*/
+	/*background: #750a20 url(images/templatemo_menu_bg.gif) repeat-x;*/
+	/*border-bottom: 1px solid #333;*/
+}
+
+#templatemo_menu ul {
+	float: left;
+	width: 1000px;
+	margin: 0;
+	padding: 0px 0 0 0;
+	list-style: none;
+}
+
+#templatemo_menu ul li{
+	display: inline;
+}
+
+#templatemo_menu ul li a{
+	float: left;
+	padding: 0 25px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: #82AE9D;
+	border-right: 1px solid #FF3333;
+}
+
+#templatemo_menu li a:hover, #templatemo_menu li .current{
+	color: #3333ff;
+}
+
+/* end of menu */
+
+/* content */
+#templatemo_content {
+	float: left;
+	width: 1000px;
+}
+
+#templatemo_main_leftcol {
+	float: left;
+	width: 630px;
+	margin-top: 15px;
+}
+.templatemo_leftcol_subcol1 {
+	float: left;
+	width: 610px;
+	padding: 0 15px 0 0;
+	margin-right: 15px;
+}
+
+
+.templatemo_leftcol_subcol {
+	float: left;
+	width: 617px;
+	padding: 0 7px 0 0;
+	margin-right: 15px;
+}
+
+#templatemo_main_rightcol {
+	float: right;
+	margin-top: 15px;
+	width: 370px;
+}
+
+* html #templatemo_main_rightcol {
+	margin-left: -15px;	
+}
+
+#templatemo_topnews {
+	display: block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #cccccc;
+}
+
+#templatemo_topnews img{
+	margin-bottom: 5px;
+}
+
+#templatemo_gallery_section {
+	display: block;
+	width: 275px;
+	padding: 5px 0 5px 5px;
+	margin-bottom: 25px;
+	border: 1px solid #CCC;
+}
+
+#image_section {
+	float: left;
+	width: 275px;	
+	padding-bottom: 5px;
+}
+
+#image_section img{
+	float: left;
+	margin: 0 3px 3px 0;
+	border: none;
+}
+
+.regular_section {
+	display: block;
+	width: 310px;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+	border-bottom: 1px dotted #CCC;
+}
+
+.newsbox {
+	clear: both;
+	width: 285px;
+	padding-bottom: 15px;
+}
+
+
+.newsbox img{
+	float: left;
+	margin: 0 5px 0 0;
+	padding: 0px;
+}
+
+.newsbox .newstitle {
+	font-size: 16px;
+	color:#C00;
+	font-weight: bold;
+}
+
+.newsbox p{
+	font-size: 11px;
+}
+
+.regular_section ul{
+	clear: both;
+	margin: 0 0 10px 0;
+	padding: 0 0 0 20px;
+}
+
+.regular_section li a{
+	font-weight: bold;
+}
+
+.regular_section li a:hover{
+	text-decoration: underline;
+}
+
+.templatemo_leftcol_fullrow {
+	clear: both;
+	float: left;
+	width: 600px;
+	padding: 10px 0 0 10px;
+	border: 1px solid #CCC;
+	margin-bottom: 25px;
+	
+}
+
+.templatemo_rcol_sectionwithborder {
+	display: block;
+	width: 368px;
+	border: 1px solid #CCC;
+	margin-bottom: 25px;	
+}
+
+#templatemo_video_section {
+	display: block;
+	width: 358px;
+	margin-top: 10px;	
+	margin-left: 10px;
+}
+
+/*titulo localidad*/
+#localidad{
+	display: block;
+	width: 1000px;
+	height: 33px;
+	margin-left: 177px;
+	background-color: rgb(242, 248, 246);
+}
+
+
+/*titulo cabezera*/
+#cabeza_titulo{
+	display: block;
+	width: 1004px;	
+	margin-left: 176px;
+	background-color: #F5F3FE;
+}
+
+#galeri{
+	width: 358px;
+	height: 100px;
+	margin-left: 220px;
+}
+
+* html #templatemo_video_section {
+	margin-left: 5px;
+}
+
+#templatemo_video_section .video_box {
+	float: left;
+	width: 206px;
+	margin: 0 10px 10px 0;
+}
+
+#templatemo_video_section .video_box img{
+	margin: 0 0 5px 0;
+}
+
+#templatemo_video_section .video_box a{
+	font-size: 10px;
+	font-weight: bold;
+}
+
+#templatemo_video_section .video_box a span{
+	color: #FF0000;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+#templatemo_newsletter_section {
+	width: 348px;
+	margin: 10px;
+}
+
+#templatemo_newsletter_section  form {
+	margin: 0 30px 0 0;
+	text-align: right;
+}
+
+#templatemo_newsletter_section  select {
+	width: 200px;
+	height: 25px;
+	padding: 2px 0;
+	margin: 0px;
+}
+
+#templatemo_newsletter_section .form_row{
+	padding: 3px 0px;
+}
+
+
+#templatemo_newsletter_section label {
+	margin-right: 10px;
+}
+
+#templatemo_newsletter_section input{
+	width: 195px;
+	height: 15px;
+}
+
+#templatemo_newsletter_section .button{
+	height: 25px;
+	width: 80px;
+}
+
+#templatemo_blog_section {
+	width: 348px;
+	margin: 10px;
+}
+
+#templatemo_blog_section .blog_box {
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px dotted #CCC;
+}
+
+#templatemo_blog_section .datetime{
+	font-weight: bold;
+}
+
+#templatemo_poll_section {
+	width: 348px;
+	margin: 10px;
+}
+
+#templatemo_poll_section p{
+	padding-bottom: 10px;
+}
+
+
+#templatemo_poll_section img{
+	float: right;
+}
+
+#templatemo_poll_section .button{
+	height: 25px;
+	width: 50px;
+	margin-right: 25px;
+}
+
+#templatemo_partner_section {
+	width: 348px;
+	margin: 10px;
+}
+
+.partner_box {
+	width: 348px;
+	padding: 0px;
+	margin-bottom: 25px;
+}
+
+.partner_box p{
+	clear: both;
+}
+
+
+
+/* ----- Footer ----- */
+#templatemo_footer {
+	clear: both;
+	float: left;
+	padding: 25px;
+	width: 950px;
+	color: #FFF;
+	text-align: left;
+	background: #333333;
+}
+
+.footer_leftcol {
+	float: left;
+	width: 400px;
+	padding: 0 0 0 10px;
+	margin-right: 25px;
+}
+
+.footer_rightcol {
+	float: right;
+	text-align: right;
+	width: 435px;
+	text-align: right;
+}
+
+.footer_subcol {
+	float: left;
+	width: 120px;
+	margin-left: 25px;
+}
+
+#templatemo_footer p{
+	padding: 0;
+	margin-bottom: 10px;	
+	text-align: justify;
+}
+
+#templatemo_footer a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+#templatemo_footer a:hover{
+	color: #FFF;
+	text-decoration: underline;
+}
+#cabeza{
+	vertical-align: center;
+	text-align: 23px;
+
+}
+
+/* ----- End of Footer ----- */
+
+/*---------prueba de menu-----------*/
+  /* el menú en si mismo */
+  .mi-menu  {
+    border-radius: 5px;
+    list-style-type: none;
+    margin: 0 auto; /* si queremos centrarlo */
+    padding: 0;
+    /* la altura y su ancho dependerán de los textos */
+    height: 35px; 
+    width: 510px;
+    /* el color de fondo */
+    background: #555;
+    background: -moz-linear-gradient(#555,#222);
+    background: -webkit-linear-gradient(#555,#222);
+    background: -o-linear-gradient(#555,#222);
+    background: -ms-linear-gradient(#555,#222);
+    background: linear-gradient(#555,#222);
+  }
+
+  /* si es necesario, evitamos que Blogger de problemas con los saltos de línea cuando escribimos el HTML */
+  .mi-menu  br { display:none; }
+
+  /* cada item del menu */
+  .mi-menu  li {
+    display: block;
+    float: left; /* la lista se ve horizontal */
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .mi-menu li a {
+    border-left: 1px solid #000;
+    border-right: 1px solid #666;
+    color: #EEE;
+    display: block;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 0 14px;
+    margin: 6px 0;
+    text-decoration: none;
+    /* animamos el cambio de color de los textos */
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+  }
+  /* eliminamos los bordes del primer y el último */
+  .mi-menu li:first-child a { border-left: none; }
+  .mi-menu li:last-child a{ border-right: none; }
+  /* efecto hover cambia el color */
+  .mi-menu li:hover > a { color: Crimson; }
+
+  /* los submenús */
+  .mi-menu ul {
+    border-radius: 0 0 5px 5px;
+    left: 0;
+    margin: 0;
+    opacity: 0; /* no son visibles */
+    position: absolute;
+    top: 40px; /* se ubican debajo del enlace principal */
+    /* el color de fondo */
+    background: #222;
+    background: -moz-linear-gradient(#222,#555);
+    background: -webkit-linear-gradient(#22,#555);
+    background: -o-linear-gradient(#222,#555);
+    background: -ms-linear-gradient(#222,#555);
+    background: linear-gradient(#222,#555);
+    /* animamos su visibildiad */
+    -moz-transition: opacity .25s ease .1s;
+    -webkit-transition: opacity .25s ease .1s;
+    -o-transition: opacity .25s ease .1s;
+    -ms-transition: opacity .25s ease .1s;
+    transition: opacity .25s ease .1s;
+  }
+  /* son visibes al poner el cursor encima */
+  .mi-menu li:hover > ul { opacity: 1; }
+
+   /* cada un ode los items de los submenús */
+  .mi-menu ul li {
+    height: 0; /* no son visibles */
+    overflow: hidden;
+    padding: 0;
+    /* animamos su visibildiad */
+    -moz-transition: height .25s ease .1s;
+    -webkit-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+  }
+  .mi-menu li:hover > ul li {
+    height: 36px; /* los mostramos */
+    overflow: visible;
+    padding: 0;
+  }
+  .mi-menu ul li a {
+    border: none;
+    border-bottom: 1px solid #111;
+    margin: 0;
+    /* el ancho dependerá de los textos a utilizar */
+    padding: 5px 20px;
+    width: 100px;
+  }
+  /* el último n otiene un borde */
+  .mi-menu ul li:last-child a { border: none; }
+

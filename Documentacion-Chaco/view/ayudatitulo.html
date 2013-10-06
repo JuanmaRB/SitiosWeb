@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <style type="text/css">
+ #caja
+ {
+ background-color: gray;
+ width: 200px;
+ height: 150px;
+ opacity:1;
+ float:left;
+ }
+ p
+ {
+ color:black;
+ padding: 10px;
+ font-size: 1.2em;
+ }
+ </style>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"type="text/javascript"></script>
+ <script type ="text/javascript">
+ function onload(){}
+ function  animar() {
+ 
+ $('#caja').animate({width:'400px',height:'300px'},1500);
+ 
+ }
+ 
+ function desaparece()
+ {
+ $('#caja').fadeOut(1500);
+ }
+ function desplegar()
+ {
+ $('#caja').slideDown(1000);
+ }
+ function slide()
+ {
+ $('#caja').slideUp(1000);
+ }
+ function reset()
+ {
+ $('#caja').animate({
+ width: '200px',
+ height: '150px',
+ opacity:1
+ },2000);
+ }
+ </script>
+ </head>
+ <body>
+ <input type="button" value="Aparecer" onclick="$('#caja').fadeIn(1000);"/>
+ 
+ <input type="button" onclick="animar();" value="Agrandar"/>
+ <input type="button" onclick="slide();" value="Recoger"/>
+ <input type="button" onclick="desplegar();" value="Desplegar"/>
+ <input type="button" onclick="reset();" value="reset"/>
+ <br/>
+ 
+ <div id="caja" onclick="desaparece()">
+ <p>Dame click!</p>
+ </div>
+ 
+ </body>
+</html>
